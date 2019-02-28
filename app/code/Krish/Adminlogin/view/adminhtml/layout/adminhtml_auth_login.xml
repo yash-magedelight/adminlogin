@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Krish, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="admin.login" remove="true" />
+
+        <referenceContainer name="login.content">
+        	<block class="Krish\Adminlogin\Block\Template" name="admin.login.krish.adminlogin" template="Krish_Adminlogin::admin/login.phtml">
+        		<container name="form.additional.info" label="Form Additional Info"/>
+                <container name="form.buttons" label="Form Buttons">
+                    <block class="Magento\Backend\Block\Template" name="adminhtml_auth_login_buttons" template="Magento_Backend::admin/login_buttons.phtml"/>
+                </container>
+        	</block>
+        </referenceContainer>
+    </body>
+</page>
