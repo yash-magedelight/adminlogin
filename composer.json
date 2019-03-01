@@ -21,7 +21,5 @@
         "psr-4": {
             "Krish\\Adminlogin\\": ""
         }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    }
 }
